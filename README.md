@@ -1,9 +1,8 @@
-# magicloud
-<img src="https://magicloud.bfgndryhtgiuuehhuihd.repl.co/cloud.png" />
-Simple file uploader<br>
+# <img src="https://magicloud.bfgndryhtgiuuehhuihd.repl.co/cloud.png" />
+Simple file uploader
 cloud storage<br>
-Supports image, audio,<br>
-video, PDF, and text files<br>
+Supports image, audio,
+video, PDF, and text files<br><br>
 
 <b>About</b><br>
 This site is a project by Nikócity.It takes no more<br>

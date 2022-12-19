@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= filename %> | MagiCloud</title>
+    <link rel="shortcut icon" href="/cloud.png">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="/home"><img src="/cloud.png" width="100"></a>
+      </div>
+      <div class="links">
+        <a href="/home#about">About</a>
+        <a href="/support">Support</a>
+      </div>
+    </nav>
+
+    <article>
+    <div><br>
+      <h1>File Info</h2>
+      <h2><%= filename %></h1>
+      <h3>File size: <%= size %></h3>
+      <h3>File type: <%= type %></h3>
+      <h3>File link:</h3>
+      <input style="cursor: default; user-select: none;" value="https://MagiCloud.ParrotDev.repl.co/uploads/<%= filename %>" type="text" readonly><br><br>
+      <h1 class="actions">File Actions</h1>
+      
+      <button onclick="copyLink()" style="height:40px; margin-right: 10px;">Copy Link</button>
+      <button onclick="window.open('/file/<%= filename %>/download')">Download</button><br><br>
+      <button onclick="window.open('/uploads/<%= filename %>/')" style="margin-right: 10px;">Open file</button>
+      <button onclick="location.href = '/'">Create New</button><br><br>
+    </div>
+    </article>
+  
+    <footer>
+      <div class="footer-link">
+        <a href="/home"><img src="/cloud.png"></a>
+      </div>
+      <div class="footer-end">
+        <p>
+          <a href="mailto:support@nikocity.ml">Nikócity</a> © 2016-2022
+        </p>
+      </div>
+    </footer>
+    
+    <script>
+      function copyLink(){
+        document.querySelector("input").select();
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+      }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 # magicloud
-<img src="https://magicloud.bfgndryhtgiuuehhuihd.repl.co/home" />
+<img src="https://magicloud.bfgndryhtgiuuehhuihd.repl.co/cloud.png" />
 Simple file uploader
 cloud storage
 Supports image, audio,

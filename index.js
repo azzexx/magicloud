@@ -5,13 +5,9 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const JSONdb = require('simple-json-db');
 const db = new JSONdb('./db.json');
-
+//**Code by Nikocity - https://nikocity.ml**\\
 const app = express();
-//limit is in hours instead of days, weeks or months (gives more control)
 const limitResetPeriod = process.env.LIMITRESET;
-//Upload limit is currently at 4 uploads a day.
-
-//TBH, I think we should publicly display the limit, even if people decide to game it (if we do it right it won't affect us much). We should also have a total upload limit, in which people have to delete files to add more - Baconman321
 const uploadLimit = process.env.UPLOADLIMIT;
 app.use(
 	fileUpload({
